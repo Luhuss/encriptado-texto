@@ -10,7 +10,7 @@ Este proyecto es una aplicación web simple que permite encriptar y desencriptar
 
 ## Vista Previa
 
-![Vista previa del Encriptador de Texto](imagenes.png)
+![Vista previa del Encriptador de Texto](pagina.png)
 
 ## Cómo usar
 
