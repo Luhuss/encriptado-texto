@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/logo-icono.svg" sizes="8x8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <main class="contenedor">
+        <header class="contenedor-logo">
+            <img class="logo" id="logo" src="imagenes/logo-icono.svg" alt="Logo del encriptador">
+        </header>
+        <section class="contenedor-entrada">
+            <label for="texto-entrada" class="ocultar">Ingrese el texto aquí:</label>
+            <textarea name="texto-entrada" id="texto-entrada" placeholder="Ingrese el texto aquí" class="texto-entrada"></textarea>
+            <p class="informacion" id="informacion">Solo letras minúsculas y sin acentos</p>
+            <div class="contenedor-botones">
+                <button class="boton" id="encriptar">Encriptar</button>
+                <button class="boton boton-transparente" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor-salida" id="contenedor-salida">
+            <div class="con-input" id="sin-texto">
+                <img class="muñeco" src="imagenes/Muñeco.svg" alt="Ilustración de un muñeco">
+                <div class="contenedor-texto">
+                    <p class="texto-bold" id="sin-mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="sin-input ocultar" id="con-texto">
+                <p class="texto-salida" id="texto-salida"></p>
+                <button class="boton boton-transparente boton-salida" id="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Luis Maraboli 2024</p>
+        <a href="https://github.com/Luhuss" target="_blank">
+            <img src="imagenes/github.png" alt="Logo de GitHub">
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
